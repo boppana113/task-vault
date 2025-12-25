@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug executable 'ownership'",
+      "type": "lldb",
+      "request": "launch",
+      "cargo": {
+        "args": [
+          "run",
+          "--bin=ownership",
+          "--manifest-path=${workspaceFolder}/ownership/Cargo.toml"
+        ]
+      },
+      "args": []
+    },
+    {
+      "name": "Debug unit tests in executable 'ownership'",
+      "type": "lldb",
+      "request": "launch",
+      "cargo": {
+        "args": [
+          "test",
+          "--bin=ownership",
+          "--manifest-path=${workspaceFolder}/ownership/Cargo.toml"
+        ]
+      }
+    }
+  ]
+}
